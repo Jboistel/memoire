@@ -16,7 +16,7 @@ def load_data(csv_path: str, pkl_path: str) -> pd.DataFrame:
     df = pd.read_pickle(pkl_path)
     return df
 
-    def scraping_high_zeroes_products(df: pd.DataFrame, nb_product: int) -> pd.DataFrame:
+def scraping_high_zeroes_products(df: pd.DataFrame, nb_product: int) -> pd.DataFrame:
     # Count the number of zeroes in each row
     df['zero_count'] = (df == 0).sum(axis=1)
     
@@ -57,3 +57,8 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     
     return demand_matrix
 
+def analyse_data(df: pd.DataFrame) -> tuple[pd.Series, pd.Series]:
+    means = df.mean(axis=1)
+    stds = df.std(axis=1)
+    
+    return means, stds
