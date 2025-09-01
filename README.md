@@ -6,13 +6,9 @@ This repo is a **single Jupyter notebook** that simulates simple inventory polic
 
 ## Files in this repo
 
-* `forecasts_and_replenishment_pol_MASTER_THESIS_BOISTE` — main notebook.
+* `forecasts_and_replenishment_pol_MASTER_THESIS_BOISTEL.ipynb` — main notebook.
 * `data/` — place the M5 CSVs here (at least `sales_train_evaluation.csv` and `calendar.csv`).
 * `.gitignore`, `.gitattributes`
-
-Suggested rename:
-
-> `forecasts_and_replenishment_pol_MASTER_THESIS_BOISTEL.ipynb` → **`m5_inventory_policies.ipynb`**
 
 ---
 
